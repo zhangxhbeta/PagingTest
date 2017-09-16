@@ -75,4 +75,10 @@ public class OraclePagingTest extends PagingTest {
     }
   }
 
+
+  @Override
+  public void queryBySeekSql(int limit, int offset) throws SQLException {
+
+  }
+
 }

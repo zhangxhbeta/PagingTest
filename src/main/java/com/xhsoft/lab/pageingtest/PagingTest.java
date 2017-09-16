@@ -21,6 +21,8 @@ abstract public class PagingTest {
 
   abstract public void queryByPagingJdbc(int limit, int offset) throws SQLException;
 
+  abstract public void queryBySeekSql(int limit, int offset) throws SQLException;
+
   protected Connection getConnection() throws SQLException {
     if (databaseSource == null) {
       throw new RuntimeException("数据源必须指定");

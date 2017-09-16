@@ -75,4 +75,9 @@ public class MysqlPagingTest extends PagingTest {
       }
     }
   }
+
+  @Override
+  public void queryBySeekSql(int limit, int offset) throws SQLException {
+
+  }
 }
